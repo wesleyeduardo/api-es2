@@ -55,4 +55,14 @@ public class Produto implements Serializable {
     public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", valor=" + valor +
+                '}';
+    }
 }
